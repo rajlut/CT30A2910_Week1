@@ -1,10 +1,12 @@
 import "./styles.css";
 
 document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
+<h1 id="title">Hello World</h1>
+<button id="my-button" onclick="myFunction()">Click me</button>
 `;
+
+function myFunction() {
+  document.getElementById("title").innerHTML = "My notebook";
+  console.log("Hello World");
+
+}
