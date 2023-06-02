@@ -3,3 +3,7 @@ function myFunction() {
   console.log("Hello World");
 
 }
+
+function addData() {
+  document.getElementById("my-list").innerHTML = "<li><textarea> Hello World </textarea></li>";
+}
